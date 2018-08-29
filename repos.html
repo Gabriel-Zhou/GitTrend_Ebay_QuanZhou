@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <head>
+      <style type="text/css">
+         div#apreloader{background:#3bc7ab;}#apreloader-text{color:#ffffff;}
+         .cube,
+         .double-bounce1, .double-bounce2,
+         .sticks > div,
+         .cube1, .cube2,
+         .round,
+         .dot1, .dot2,
+         .straightdots > div,
+         .container1 > div, .container2 > div, .container3 > div,
+         .movingBallLineG, .movingBallG,
+         .windows8 .wBall .wInnerBall {
+         background-color: #ffffff;
+         } #apreloader-content-wrap span#apreloader-text{ font-size: 20px;}
+      </style>      
+      <link rel="stylesheet" href="css/w3.css">
+      <link rel="stylesheet" href="css/base.css" />
+      <link rel="stylesheet" href="css/layout.css" />
+      <link rel="stylesheet" href="css/menus.css" />
+      
+      <link rel="stylesheet" href="css/custom.css" />
+      <link rel="stylesheet" href="css/responsive.css" />
+      <style>
+         .wrapper { max-width: 980px; }
+         #maininner { width: 100%; }
+         #menu .dropdown { width: 250px; }
+         #menu .columns2 { width: 500px; }
+         #menu .columns3 { width: 750px; }
+         #menu .columns4 { width: 1000px; }
+         body#page.gen3-frontpage #block-bottom-a {
+         margin: 0px !important;
+         }span.glyphicon {
+         font-size: 80px;
+         }.width16 {
+         width: 50%;
+         }.w3-btn-floating, .w3-btn-floating-large {
+         	background-color: #4A722D !important;
+         }.w3-dark-gray, .w3-hover-dark-gray:hover {
+			background-color: #335B15 !important;
+		 }.content-section-h {
+			border-bottom:1px solid #E7E7E7;
+			padding:10px 0px 10px;
+		}
+    
+		/* Make the image fit the box */
+		#boxshadow img {
+			width: 140px;
+			border: 1px solid #ffffff;
+			border-radius:50%;
+		}#rcorners {
+			background-color:#F8F8F8;
+			border-radius: 5%;
+			border:#cccccc 1px solid;
+			background-repeat: repeat;
+			padding: 15px 20px 20px 20px;
+		}#block-header {
+		  border-bottom:0px solid #E0E0E0;
+		}::selection {
+		  background: #a8d1ff; /* WebKit/Blink Browsers */
+		}
+		::-moz-selection {
+		  background: #a8d1ff; /* Gecko Browsers */
+		}
+      </style>
+      
+      
+      <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="commons/jquery-latest.js" type="text/javascript"></script>
+    <script src="commons/bootstrap.min.js"></script>
+    <script src="javascript/bundle.js"></script>
+    <script type="text/javascript" src="javascript/repos.js"></script>
+    <script type="text/javascript" src="javascript/moment.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   </head>
+   <body id="page" class="page body-dark isblog gen3-frontpage">
+      <div id="block-header">
+         <div class="block-header wrapper max-width80">
+            <header id="header" class="clearfix">
+               <a id="logo" href="repos.html">
+                  <div><img src="images/homeicon.png" alt="homeicon" width="105" height="105" vspace="46"/></div>
+               </a>
+               <div id="banner">
+                  <ul class="menu menu-sidebar">
+                     <li class="level1 item933"><a href="repos.html" class="level1" style="text-decoration: none"><span style="font-size:15px">Home</span></a></li>
+                  </ul>
+               </div>
+            </header>
+         </div>
+      </div>
+      
+     <div class="container"> 
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="input-group">
+              <h3 align="bottom">Git <span style="color:forestgreen">Popular</span></h3>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-lg-8" style="padding-top:3px;">
+              <h2 align="left">Top Trend <span style="color:forestgreen">Git Repo</span></h2>
+
+        </div><!-- /.col-lg-6 -->
+        </div>
+    </div>
+    
+    </br>
+    
+    <div class="container"> 
+        <div class="row">
+          <div class="col-lg-3" id="rcorners">
+              <h3 style="padding-bottom:10px;">Filter by</h3>
+              <form id="filter" method="POST">
+                  <div class="form-group">
+                      <h4><label for="langlabel">Language:</label></h4>
+                      <select class="form-control" id="language">
+                          <option value="all">All Languages</option>
+                          <option value="java">Java</option>
+                          <option value="c">C</option>
+                          <option value="html">HTML</option>
+                          <option value="javascript">Javascript</option>
+                          <option value="python">Python</option>
+                          <option value="ruby">Ruby</option>
+                          <option value="php">PHP</option>
+                      </select>
+                          <span style="color: #aaaaaa; font-size: 12px; padding: 0px 0px 0px 5px;">Ex: Java</span>
+                          </div>
+                  <div class="form-group">
+                      <h4><label for="datelabel">Date Since:</label></h4>
+                      <input type="date" id="daterange" class="form-control"/>
+                      <span style="color: #aaaaaa; font-size: 12px; padding: 0px 0px 0px 5px;">Ex: 08/27/2018 [mm/dd/yyyy]</span>
+                  </div>
+                  <div class="form-group" align="right">
+                      <button type="submit" class="btn btn-primary" id="filterbtn" style="background-color:green;">Filter</button>
+                  </div>
+              </form>
+          </div><!-- /.col-lg-3 -->
+          
+          <div class="col-lg-1" style="padding-top:20px;">
+            <div class="input-group">
+            </div>
+          </div>
+          
+          <div class="col-lg-8" style="padding-top:20px;">
+              <h4 class="Language"></h4>
+              <br>
+              <h4 class="DateSince"></h4>
+              <br>
+              <h4 class="performance"></h4>
+
+              <div class="objectIndex">
+                  
+        </div><!-- /.col-lg-8 -->
+        </div>
+    </div><!-- /.container -->
+	</div>  
+      
+      <div id="block-bottom-b" class="bg-dark bg-colored">
+         <div class="block-bottom-b wrapper max-width80">
+            <section id="bottom-b" class="grid-block">
+               <div class="grid-box width100 grid-v">
+                  <div align="center">
+                     <h3 class="module-title" style="background: black; color: white; text-align: center; padding: 14px; display: block;">Git Repo Top Trend Site Author</h3>
+                  </div>
+                  <div align="center" id="d2i-sponsor-footer" style="padding:0px 20px 0px 20px;">
+                     <a href="https://www.linkedin.com/in/quan-gabriel-zhou-4811a158/" target="_blank"><img alt="authorimg" src="images/author.jpg" style="height: 280px; padding: 10px;" /></a> &nbsp; &nbsp;
+                  </div>
+                  <div class="clearfix"></div>
+                  <div align="center" style="padding:15px 0px 0px 0px">
+                      <p style="font-size:14px;font-weight:500">PhD Candidate (Defense at Sep 2018), Computer Science, Indiana University Bloomiongton</p>
+                      <p style="font-size:14px;font-weight:500">Tel: 812-361-5159 || Email: quzhou@iu.edu</p>
+                      <p style="font-size:14px;font-weight:500">Applied Ebay Position: R0027103 MTS 1 Software Engineer Product Experience Insight eBay Branky Shao </p>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <div id="block-bottom-c" class="bg-white">
+         <div class="block-bottom-c wrapper max-width80">
+            <section id="bottom-c" class="grid-block">
+               <div class="grid-box width100 grid-v">
+                  <div class="module mod-box mod-box-default  deepest">
+                     <ul  id="mainlevel">
+                        <li>
+                           <span class="mainlevel"><a href="repos.html">Home</a></span>
+                        </li>
+                        <li style="float:right">
+                           <span class="mainlevel">Copyright © Quan Zhou, Ebay Programming Challenge Project, August 2018</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </body>
+</html>
