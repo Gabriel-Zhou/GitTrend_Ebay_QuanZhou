@@ -6,7 +6,8 @@ Functions:
 
 ```
 1) Show the top 10 github repositories with most fork and pull request 
-2) Provide a time period and language control to select the result, for example, top 10 fork Java repositories in last 30 days
+2) Provide a time period and language control to select the result, 
+    for example, top 10 fork Java repositories in last 30 days
 3) A simple UI chart to show the trend of each top repository
 ```
 
