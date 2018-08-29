@@ -11,6 +11,14 @@ Functions:
 3) A simple UI chart to show the trend of each top repository
 ```
 
+# Ebay Programming Challenge Timeline
+
+Question Received: 10:00 pm Eatern Time, Aug. 27th, 2018.
+
+Code Submitted: 3:00 pm Eatern Time, Aug. 29th, 2018.
+
+Working Time: 6-7 Hours
+
 # Demo Site and Screenshots
 
 ## Demo Site URL: 
@@ -54,7 +62,7 @@ vi SimpleServer.py
 2) Edit Port # to available port on your environment
 
 ```
-PORT = 9002 ---> PORT = # of your free port)
+PORT = 9002 ---> PORT = <# of your free port>
 ```
 
 3) Run Simple HTTP Server
@@ -84,6 +92,27 @@ cp -rf <repo_path>/* <tomcat_path>/webapps/gittrendqz/
 ```
 http://<ip>:<tomcat_port>/gittrendqz/repos.html
 ```
+
+# Project Implementation
+
+1) Git API V3: The project source is built upon using varied AJAX calls to Git V3 APIs to search repositories, forks, etc.
+
+2) Trend Chart is gathering the repo's newest fork events timestamps using Git API. Each trend graph is one onclick function by clicking button "Repo Trend!". This saves overhead of multiple AJAX calls of retrieving each top 10 repo's fork history. 
+
+3) Filter function helps site visitors to specify repo's language and time period for their preference. 
+
+# Project Challenges
+
+Trend UI Chart of each top repo is implemented by showing repo's newest fork events. I consider if the repo is forked frequently in the latest several days, the repo's trend is increasing. Otherwise, descreasing. 
+
+If there is any comments or feedbacks to strengthen the Trend Chart, I am happy to update the function and always stay in the loop. 
+
+# Contact Information
+
+Author's contact information can be found in the footnote of demo site page:
+
+http://rocks-53.sdsc.edu:8079/gittrendqz/repos.html
+
 
 # Contribution
 This work is from Quan Zhou for Ebay Programming Challenge from Aug. 28th to Aug. 29th, 2018.
