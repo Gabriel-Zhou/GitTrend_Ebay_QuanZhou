@@ -23,15 +23,15 @@ http://rocks-53.sdsc.edu:8079/gittrendqz/repos.html
 
 1) Default Filter (All Languages, Date Since 2018-08-20)
 
-<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen1.jpg" width="60%">
+<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen1.jpg" width="50%">
 
 2) Custom Filter (Java, Date Since 2018-08-03)
 
-<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen2.jpg" width="60%">
+<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen2.jpg" width="55%">
 
 3) Trend Chart of one Top repository (Spring-boot repo's newest fork events)
 
-<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen3.jpg" width="60%">
+<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen3.jpg" width="50%">
 
 # Installation Guide
 
@@ -41,29 +41,48 @@ http://rocks-53.sdsc.edu:8079/gittrendqz/repos.html
 
 Note: Choose 1 or 2 to host a web server container to run HTML/JS sources. 
 
+## Deploy GitTrend Web Application
 
+### Using Python Simple HTTP Server
 
-## Install and Deploy PRAGMA PIT Ext service
-1) Build source to generate a web application archive (war) file:
-
-```
-mvn clean install -Dmaven.test.skip=true
-```
-
-2) PIT ext service must be configured properly so it knows which identifier service and type registry to contact.
-An example configuration file in Java's properties file format can be found as testing.properties.example. Copy it to /usr/local/rda/pitapi.properties and make sure the application server's user has sufficient permissions to read it. Also update it with the addresses of the Handle System 8 instance and possibly the Type Registry. The config file contains the same properties that are also used for testing.
-
-3) Deploy the generated war file on your application server (e.g., Tomcat)
+1) Edit /SimpleServer.py
 
 ```
-cp <pragmapit-ext>/target/pragmapit-ext-0.2.war <tomcat>/webapps/
+vi SimpleServer.py
 ```
 
-4) A simple test to verify that the API is running properly can be made by calling the {@link rdapit.rest.TypingRESTResource#simplePing ping} method:
+2) Edit Port # to available port on your environment
 
 ```
-curl http://your.server/your.application.path/pitapi/ping
->Hello World
+PORT = 9002 ---> PORT = # of your free port)
+```
+
+3) Run Simple HTTP Server
+
+```
+python SimpleServer.py
+```
+
+4) Access GitTrend Web App through your browser by URL:
+
+```
+http://<ip>:<port>/repos.html
+```
+
+### Using Tomcat Web Container
+
+1) Download and Run your tomcat server. 
+
+2) Deploy the GitTrend Web Apps on your tomcat server:
+
+```
+cp -rf <repo_path>/* <tomcat_path>/webapps/gittrendqz/
+```
+
+3) Access GitTrend Web App through your browser by URL:
+
+```
+http://<ip>:<tomcat_port>/gittrendqz/repos.html
 ```
 
 # Contribution
