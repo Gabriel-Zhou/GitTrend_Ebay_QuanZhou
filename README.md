@@ -6,17 +6,31 @@ Functions:
 
 ```
 1) Show the top 10 github repositories with most fork and pull request 
-2) Provide a time period control to select the result, for example, top 10 fork repositories in last 30 days
+2) Provide a time period and language control to select the result, for example, top 10 fork Java repositories in last 30 days
 3) A simple UI chart to show the trend of each top repository
 ```
 
 # Demo Site and Screenshots
 
-Demo Site URL: http://rocks-53.sdsc.edu:8079/gittrendqz/repos.html
+## Demo Site URL: 
+
+http://rocks-53.sdsc.edu:8079/gittrendqz/repos.html
+
 (Deployed on one Linux VM using Tomcat V7 as web apps container)
 
-Demo Site Screenshots:
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+## Demo Site Screenshots:
+
+1) Default Filter (All Languages, Date Since 2018-08-20)
+
+![alg tag](https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen1.jpg?raw=true)
+
+2) Custom Filter (Java, Date Since 2018-08-03)
+
+![alg tag](https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen2.jpg?raw=true)
+
+3) Trend Chart of one Top repository (Spring-boot repo's newest fork events)
+
+![alg tag](https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen3.jpg?raw=true)
 
 # Installation Guide
 
