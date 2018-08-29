@@ -23,15 +23,15 @@ http://rocks-53.sdsc.edu:8079/gittrendqz/repos.html
 
 1) Default Filter (All Languages, Date Since 2018-08-20)
 
-![alg tag](https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen1.jpg?raw=true)
+<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen1.jpg" width="60%">
 
 2) Custom Filter (Java, Date Since 2018-08-03)
 
-![alg tag](https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen2.jpg?raw=true)
+<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen2.jpg" width="60%">
 
 3) Trend Chart of one Top repository (Spring-boot repo's newest fork events)
 
-![alg tag](https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen3.jpg?raw=true)
+<img src="https://github.com/Gabriel-Zhou/GitTrend_Ebay_QuanZhou/blob/master/screenshots/screen3.jpg" width="60%">
 
 # Installation Guide
 
